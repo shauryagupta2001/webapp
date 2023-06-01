@@ -1,0 +1,22 @@
+ <form>
+<label for="">name</label>
+<input type="text" name="name" [(ngModel)]="name" class="form-control"><br>
+<label for="">password</label>
+<input type="password"name="password" [(ngModel)]="password" class="form-control"><br>
+<label for="">age</label>
+<input type="text" name="age" [(ngModel)]="age"class="form-control"><br>
+<label for="">phoneno</label>
+<input type="text" name="phoneno" [(ngModel)]="phoneno"class="form-control"><br>
+<label for="">address</label>
+<input type="text" name="country" [(ngModel)]="country"><br>
+
+<select >
+    <option value="">-----please select--</option>
+    <option *ngFor="let c of country">{{c}}</option> 
+    
+</select> <br><br>
+<select>
+    <option value="">-----</option>
+    <option *ngFor="let s of state" >{{s}}</option> 
+</select>
+<button (click)="onLogi()" class="btn btn-primary" >submit</button> 
